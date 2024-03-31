@@ -145,7 +145,7 @@ const Navbar: React.FC = () => {
           </li>
           <li>
             <Link
-              to="/portfolio"
+              to="/"
               onClick={() => {
                 closeNav();
               }}
