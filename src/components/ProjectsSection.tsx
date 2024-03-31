@@ -85,7 +85,7 @@ const ProjectsSection: React.FC = () => {
               </h2>
               <Link
                 className="inline-block py-2 px-4 mt-3 ml-3 rounded-lg font-[700] tracking-[1px] text-white bg-[rgb(17,24,39)] transition-colors duration-200 ease-in-out notOnMobile:hover:bg-blue-700 notOnMobile:hover:text-white"
-                to="/basiccalculatorapp"
+                to="/portfolio/basiccalculatorapp"
               >
                 Live Soon!
               </Link>
@@ -123,7 +123,7 @@ const ProjectsSection: React.FC = () => {
               </h2>
               <Link
                 className="inline-block py-2 px-4 mt-3 ml-3 rounded-lg font-[700] tracking-[1px] text-white bg-[rgb(17,24,39)] transition-colors duration-200 ease-in-out notOnMobile:hover:bg-blue-700 notOnMobile:hover:text-white"
-                to="/taxcalculatorapp"
+                to="/portfolio/taxcalculatorapp"
               >
                 Live Soon!
               </Link>
@@ -161,7 +161,7 @@ const ProjectsSection: React.FC = () => {
               </h2>
               <Link
                 className="inline-block py-2 px-4 mt-3 ml-3 rounded-lg font-[700] tracking-[1px] text-white bg-[rgb(17,24,39)] transition-colors duration-200 ease-in-out notOnMobile:hover:bg-blue-700 notOnMobile:hover:text-white"
-                to="/todoproductivityapp"
+                to="/portfolio/todoproductivityapp"
               >
                 Live Soon!
               </Link>
