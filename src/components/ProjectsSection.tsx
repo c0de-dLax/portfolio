@@ -126,7 +126,7 @@ const ProjectsSection: React.FC = () => {
                 Tax Calculator for the Philippines
               </h1>
               <h2 className="my-4 text-base tracking-[0.5px]">
-                Excited to introduce an online tool designed to streamline tax
+                Excited to introduce this online tool designed to streamline tax
                 deductions and contributions for Filipino employees! Leveraged
                 Material UI to create the user-friendly interface for this web
                 app.
