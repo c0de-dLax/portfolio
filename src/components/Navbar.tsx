@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
     <header className="shadow-md w-full h-[70px] flex justify-center bg-white border-gray-300 dark:border-[rgb(17,24,39)] dark:bg-[rgb(2,8,23)] border-b-2 overflow-hidden top-0 sticky z-10">
       <div className="w-[1060px] flex items-center gap-[calc(20px+0.5vw)] text-[14px] text-black dark:text-white font-semibold px-[16px] focus:outline-none">
         <Link
-          to="/"
+          to="/portfolio/"
           onClick={() => {
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
           }}

@@ -90,7 +90,7 @@ const ContactSection: React.FC = () => {
       </div>
       <div className="relative w-[100%] bg-gray-300 dark:bg-[rgb(17,24,39)]">
         <Link
-          to="/"
+          to="/portfolio/"
           aria-label="Return to top"
           onClick={() => {
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
