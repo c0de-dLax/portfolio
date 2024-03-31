@@ -56,7 +56,9 @@ const ProjectsSection: React.FC = () => {
           <h1 className="absolute z-0">
             <CodeBracketIcon className="my-[-4em] mx-auto inline-block w-[5.5em] text-blue-500 opacity-[70%] dark:opacity-[10%]" />
           </h1>
-          <h1 className="z-[1] font-bold tracking-[.1em] [text-shadow:-2px_-2px_white,2px_-2px_white,-2px_2px_white,2px_2px_white] dark:[text-shadow:none]">Projects</h1>
+          <h1 className="z-[1] font-bold tracking-[.1em] [text-shadow:-2px_-2px_white,2px_-2px_white,-2px_2px_white,2px_2px_white] dark:[text-shadow:none]">
+            Projects
+          </h1>
         </div>
       </div>
       <h2 className="mx-auto px-10 text-gray-700 dark:text-gray-400 max-w-lg text-center mt-8">
@@ -81,17 +83,23 @@ const ProjectsSection: React.FC = () => {
                 A Go-To Classic Calculator App
               </h1>
               <h2 className="my-4 text-base tracking-[0.5px]">
-                Powered by the dynamic duo — Vite + React!
+                Thrilled to unveil this online tool that simplifies everyday
+                calculations! Designed with essential functions including
+                addition, subtraction, multiplication, division, and percentage
+                calculations. Built with user convenience in mind, it's your
+                go-to solution for quick and accurate computations.
               </h2>
-              <Link
+              <a
                 className="inline-block py-2 px-4 mt-3 ml-3 rounded-lg font-[700] tracking-[1px] text-white bg-[rgb(17,24,39)] transition-colors duration-200 ease-in-out notOnMobile:hover:bg-blue-700 notOnMobile:hover:text-white"
-                to="/portfolio/basiccalculatorapp"
+                href="https://c0de-dlax.github.io/basiccalculatorapp/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Live Soon!
-              </Link>
+                Live App
+              </a>
               <a
                 className="inline-block py-2 px-4 mt-3 ml-3 rounded-lg font-[700] tracking-[1px]	text-[rgb(17,24,39)] transition-colors duration-200 ease-in-out notOnMobile:hover:bg-blue-700 notOnMobile:hover:text-white"
-                href="https://github.com/c0de-dLax"
+                href="https://github.com/c0de-dLax/basiccalculatorapp.git"
                 target="_blank"
                 rel="noopener noreferrer"
               >
@@ -118,18 +126,20 @@ const ProjectsSection: React.FC = () => {
                 Tax Calculator for the Philippines
               </h1>
               <h2 className="my-4 text-base tracking-[0.5px]">
-                An app that automates tax deductions and contributions for
-                Philippine employees.
+                Excited to introduce an online tool designed to streamline tax
+                deductions and contributions for Filipino employees! Leveraged
+                Material UI to create the user-friendly interface for this web
+                app.
               </h2>
-              <Link
+              <a
                 className="inline-block py-2 px-4 mt-3 ml-3 rounded-lg font-[700] tracking-[1px] text-white bg-[rgb(17,24,39)] transition-colors duration-200 ease-in-out notOnMobile:hover:bg-blue-700 notOnMobile:hover:text-white"
-                to="/portfolio/taxcalculatorapp"
+                href="https://c0de-dlax.github.io/taxcalculatorapp/"
               >
                 Live Soon!
-              </Link>
+              </a>
               <a
                 className="inline-block py-2 px-4 mt-3 ml-3 rounded-lg font-[700] tracking-[1px]	text-[rgb(17,24,39)] transition-colors duration-200 ease-in-out notOnMobile:hover:bg-blue-700 notOnMobile:hover:text-white"
-                href="https://github.com/c0de-dLax"
+                href="https://github.com/c0de-dLax/taxcalculatorapp.git"
                 target="_blank"
                 rel="noopener noreferrer"
               >
