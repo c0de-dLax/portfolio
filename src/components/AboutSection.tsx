@@ -164,7 +164,7 @@ const AboutSection: React.FC = () => {
                     <img
                       alt="React js Logo"
                       className="mb-2"
-                      src="/icons/reactlogo.webp"
+                      src="icons/reactlogo.webp"
                       decoding="async"
                       loading="lazy"
                       width="500"
