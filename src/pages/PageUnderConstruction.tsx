@@ -6,7 +6,7 @@ export default function PageUnderConstruction() {
       <h1 className="text-[3em] text-center px-2 mt-6">Coming Soon!</h1>
       <h2 className="text-[3em] text-center font-[500] px-2">This page is still under construction.</h2>
       <h3 className="text-[1.5em] text-blue-600 text-center mt-4 px-2 mb-10">
-        <Link to="/#projects">
+        <Link to="/portfolio/#projects">
           Click here to go back to the Home Page
         </Link>
       </h3>

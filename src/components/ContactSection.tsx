@@ -73,7 +73,7 @@ const ContactSection: React.FC = () => {
               </h2>
               <h2 className="mt-6">
                 <Link
-                  to="/contactform"
+                  to="/portfolio/contactform"
                   aria-label="Access contact form to send message"
                   onClick={() => {
                     window.scrollTo({ top: 0, left: 0, behavior: "smooth" });

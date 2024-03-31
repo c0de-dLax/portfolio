@@ -82,21 +82,21 @@ const Navbar: React.FC = () => {
           Ody James Catanaoan
         </Link>
         <Link
-          to="/#about"
+          to="/portfolio/#about"
           aria-label="Jump to about section"
           className="navLink w-fit pt-[5px] pb-[7px] px-[10px] rounded-[8px] notOnMobile:hover:bg-gray-200 dark:notOnMobile:hover:bg-[rgb(27,36,51)] transition duration-300 ease-in-out"
         >
           About Me
         </Link>
         <Link
-          to="/#projects"
+          to="/portfolio/#projects"
           aria-label="Jump to projects section"
           className="navLink w-fit pt-[5px] pb-[7px] px-[10px] rounded-[8px] notOnMobile:hover:bg-gray-200 dark:notOnMobile:hover:bg-[rgb(27,36,51)] transition duration-300 ease-in-out"
         >
           Projects
         </Link>
         <Link
-          to="/#contact"
+          to="/portfolio/#contact"
           aria-label="Jump to contact section"
           className="navLink w-fit pt-[5px] pb-[7px] px-[10px] rounded-[8px] notOnMobile:hover:bg-gray-200 dark:notOnMobile:hover:bg-[rgb(27,36,51)] transition duration-300 ease-in-out"
         >
@@ -145,7 +145,7 @@ const Navbar: React.FC = () => {
           </li>
           <li>
             <Link
-              to="/"
+              to="/portfolio"
               onClick={() => {
                 closeNav();
               }}
@@ -157,7 +157,7 @@ const Navbar: React.FC = () => {
           </li>
           <li>
             <Link
-              to="/#about"
+              to="/portfolio/#about"
               onClick={() => {
                 closeNav();
               }}
@@ -169,7 +169,7 @@ const Navbar: React.FC = () => {
           </li>
           <li>
             <Link
-              to="/#projects"
+              to="/portfolio/#projects"
               onClick={() => {
                 closeNav();
               }}
@@ -181,7 +181,7 @@ const Navbar: React.FC = () => {
           </li>
           <li>
             <Link
-              to="/contactform"
+              to="/portfolio/contactform"
               onClick={() => {
                 closeNav();
                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });

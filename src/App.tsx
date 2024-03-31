@@ -8,12 +8,12 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/contactform" element={<ContactPage />} />
-        <Route path="/basiccalculatorapp" element={<PageUnderConstruction />} />
-        <Route path="/taxcalculatorapp" element={<PageUnderConstruction />} />
-        <Route path="/todoproductivityapp" element={<PageUnderConstruction />} />
-        <Route path="*" element={<PageNotFound />} />
+        <Route path="/portfolio" element={<HomePage />} />
+        <Route path="/portfolio/contactform" element={<ContactPage />} />
+        <Route path="/portfolio/basiccalculatorapp" element={<PageUnderConstruction />} />
+        <Route path="/portfolio/taxcalculatorapp" element={<PageUnderConstruction />} />
+        <Route path="/portfolio/todoproductivityapp" element={<PageUnderConstruction />} />
+        <Route path="/portfolio/*" element={<PageNotFound />} />
       </Routes>
     </Router>
   );
