@@ -8,7 +8,7 @@ export default function App() {
   return (
     <Router>
       <Routes>
-        <Route path="/portfolio" element={<HomePage />} />
+        <Route path="/portfolio/" element={<HomePage />} />
         <Route path="/portfolio/contactform" element={<ContactPage />} />
         <Route path="/portfolio/basiccalculatorapp" element={<PageUnderConstruction />} />
         <Route path="/portfolio/taxcalculatorapp" element={<PageUnderConstruction />} />
