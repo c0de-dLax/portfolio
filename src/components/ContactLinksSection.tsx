@@ -20,7 +20,7 @@ const ContactLinksSection: React.FC = () => {
           <menu>
             <li>
               <Link
-                to="/portfolio"
+                to="/"
                 className="transition duration-300 ease-in-out notOnMobile:hover:text-blue-700 dark:notOnMobile:hover:text-blue-400"
               >
                 Home
@@ -28,7 +28,7 @@ const ContactLinksSection: React.FC = () => {
             </li>
             <li>
               <Link
-                to="/portfolio/#about"
+                to="/#about"
                 aria-label="Return to about section"
                 className="transition duration-300 ease-in-out notOnMobile:hover:text-blue-700 dark:notOnMobile:hover:text-blue-400"
               >
@@ -37,7 +37,7 @@ const ContactLinksSection: React.FC = () => {
             </li>
             <li>
               <Link
-                to="/portfolio/#projects"
+                to="/#projects"
                 aria-label="Return to projects section"
                 className="transition duration-300 ease-in-out notOnMobile:hover:text-blue-700 dark:notOnMobile:hover:text-blue-400"
               >
