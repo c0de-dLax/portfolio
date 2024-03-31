@@ -39,7 +39,7 @@ const AboutSection: React.FC = () => {
               <img
                 alt="OJ Catanaoan Image"
                 className="rounded-full shadow-[0_4px_8px_0_rgba(0,0,0,0.2),0_6px_20px_0_rgba(0,0,0,0.19);] dark:shadow-none"
-                src={"/icons/mypic.webp"}
+                src="icons/mypic.webp"
                 decoding="async"
                 loading="lazy"
                 width="190"
@@ -99,7 +99,7 @@ const AboutSection: React.FC = () => {
                     <img
                       className="mb-3 w-full"
                       alt="HTML Logo"
-                      src={"/icons/htmlicon.webp"}
+                      src="icons/htmlicon.webp"
                       decoding="async"
                       loading="lazy"
                       width="283"
@@ -117,7 +117,7 @@ const AboutSection: React.FC = () => {
                     <img
                       alt="CSS Logo"
                       className="mb-3"
-                      src={"/icons/cssicon.webp"}
+                      src="icons/cssicon.webp"
                       decoding="async"
                       loading="lazy"
                       width="281"
@@ -135,7 +135,7 @@ const AboutSection: React.FC = () => {
                     <img
                       alt="Javascript Logo"
                       className="mb-3 w-[90%] ml-auto mr-auto"
-                      src={"/icons/jsicon.webp"}
+                      src="icons/jsicon.webp"
                       decoding="async"
                       loading="lazy"
                       width="500"
@@ -164,7 +164,7 @@ const AboutSection: React.FC = () => {
                     <img
                       alt="React js Logo"
                       className="mb-2"
-                      src={"/icons/reactlogo.webp"}
+                      src="/icons/reactlogo.webp"
                       decoding="async"
                       loading="lazy"
                       width="500"
@@ -182,7 +182,7 @@ const AboutSection: React.FC = () => {
                     <img
                       alt="Tailwind CSS Logo"
                       className="mb-[22px] mt-[20px]"
-                      src={"/icons/tailwind.webp"}
+                      src="icons/tailwind.webp"
                       decoding="async"
                       loading="lazy"
                       width="287"
@@ -200,7 +200,7 @@ const AboutSection: React.FC = () => {
                     <img
                       alt="Nodejs Logo"
                       className="mb-[8px] ml-[6px] mt-1"
-                      src={"/icons/nodejslogo.webp"}
+                      src="icons/nodejslogo.webp"
                       decoding="async"
                       loading="lazy"
                       width="500"

@@ -69,7 +69,7 @@ const ProjectsSection: React.FC = () => {
               <img
                 className="w-full object-cover"
                 alt="Basic Calculator Web App Preview Image"
-                src="/images/basicCalcuMockUpReady.webp"
+                src="images/basicCalcuMockUpReady.webp"
                 decoding="async"
                 loading="lazy"
                 width="1620"
@@ -106,7 +106,7 @@ const ProjectsSection: React.FC = () => {
               <img
                 className="w-full object-cover"
                 alt="Tax Calculator Web App Preview Image"
-                src="/images/taxCalcuMockUpReady.webp"
+                src="images/taxCalcuMockUpReady.webp"
                 decoding="async"
                 loading="lazy"
                 width="1620"
@@ -144,7 +144,7 @@ const ProjectsSection: React.FC = () => {
               <img
                 className="w-full object-cover"
                 alt="Basic Calculator Web App Preview Image"
-                src="/images/comingsoon.webp"
+                src="images/comingsoon.webp"
                 decoding="async"
                 loading="lazy"
                 width="1620"
