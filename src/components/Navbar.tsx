@@ -201,7 +201,7 @@ const Navbar: React.FC = () => {
                 }}
                 className="flex items-center w-full h-[60px] notOnMobile:hover:bg-[rgb(17,24,39)] text-[18px] tracking-[1px] cursor-pointer"
               >
-                <FaMoon className="w-[26px] h-[22px] mr-[40px] ml-[16px]" />
+                <FaSun className="w-[26px] h-auto mr-[40px] ml-[16px]" />
                 Theme
               </div>
             ) : (
@@ -212,7 +212,7 @@ const Navbar: React.FC = () => {
                 }}
                 className="flex items-center w-full h-[60px] notOnMobile:hover:bg-gray-200 text-[18px] tracking-[1px] cursor-pointer"
               >
-                <FaSun className="w-[26px] h-auto mr-[40px] ml-[16px]" />
+                <FaMoon className="w-[26px] h-[22px] mr-[40px] ml-[16px]" />
                 Theme
               </div>
             )}
