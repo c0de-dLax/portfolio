@@ -57,7 +57,7 @@ const AboutSection: React.FC = () => {
               </p>
             </div>
           </Fade>
-          <Fade delay={300} duration={500} direction="down" triggerOnce>
+          {/* <Fade delay={300} duration={500} direction="down" triggerOnce>
             <div className="flex justify-start max-w-lg mx-auto">
               <a
                 className="shadow-[0_4px_8px_0_rgba(0,0,0,0.2),0_6px_20px_0_rgba(0,0,0,0.19);] dark:shadow-none font-[700] mt-2 ml-6 border-2 text-blue-700 border-blue-700  dark:text-blue-500 dark:border-blue-500 py-2 px-4 focus:outline-none rounded text-base tracking-[1px] transition-colors duration-300 ease-in-out notOnMobile:hover:bg-blue-600 notOnMobile:hover:border-blue-600 notOnMobile:hover:text-white"
@@ -68,7 +68,7 @@ const AboutSection: React.FC = () => {
                 View Resume
               </a>
             </div>
-          </Fade>
+          </Fade> */}
         </div>
         <div id="technologies" className="mt-[30px] px-10">
           <div className="px-5 py-10 max-w-3xl mx-auto text-center">
