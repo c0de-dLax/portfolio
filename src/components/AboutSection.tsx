@@ -20,7 +20,7 @@ const AboutSection: React.FC = () => {
   return (
     <section
       id="about"
-      className="notOnMobile:mt-[100px] mobile:mt-[60px] mb-24 notOnMobile:scroll-mt-[30px] mobile:scroll-mt-[46px] pt-[20px] max-w-[1050px] mx-auto text-black dark:text-white"
+      className="mb-36 scroll-mt-[100px] mobile:scroll-mt-[90px] max-w-[1060px] mx-auto text-black dark:text-white"
     >
       <div className="notOnMobile:mt-[50px] mobile:mt-4 text-[calc(26px+1vw)] px-5 pt-8 notOnMobile:pb-12 mobile:pb-6">
         <div className="flex relative justify-center mx-auto text-[1em] max-w-[calc(280px+10vw)]">

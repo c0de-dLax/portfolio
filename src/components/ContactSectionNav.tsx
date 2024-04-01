@@ -9,7 +9,7 @@ import {
   FaSquareXTwitter,
 } from "react-icons/fa6";
 
-const ContactLinksSection: React.FC = () => {
+const ContactSectionNav: React.FC = () => {
   return (
     <section>
       <div className="flex sm:flex-col sm:gap-y-8 mx-auto mt-[34px] max-w-[1100px] justify-center mb-6 text-black dark:text-white font-[500] dark:font-[400]">
@@ -117,7 +117,7 @@ const ContactLinksSection: React.FC = () => {
               >
                 <div className="flex items-center notOnMobile:hover:text-blue-700 dark:notOnMobile:hover:text-blue-400">
                   <FaSquareXTwitter className="mr-[8px] w-[28px] h-[28px]" />
-                  Twitter
+                  X
                 </div>
               </a>
             </li>
@@ -128,4 +128,4 @@ const ContactLinksSection: React.FC = () => {
   );
 };
 
-export default ContactLinksSection;
+export default ContactSectionNav;

@@ -1,6 +1,6 @@
 import React, { useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
-import ContactLinksSection from "./ContactLinksSection";
+import ContactLinksSection from "./ContactSectionNav";
 
 import { keyframes } from "@emotion/react";
 import Reveal from "react-awesome-reveal";
@@ -101,9 +101,10 @@ const ContactSection: React.FC = () => {
         </Link>
         <div
           id="copyright"
-          className="flex justify-center items-center w-full h-[80px] text-black font-[500] dark:text-white dark:font-[400] py-[10px] mx-auto text-[calc(10px+0.5vw)] tracking-[1px]"
+          className="flex xs:flex-col justify-center items-center w-full text-black font-[500] dark:text-white dark:font-[400] pt-10 pb-4 mx-auto text-[14px] tracking-[0.5px]"
         >
-          Copyright © 2024 ODY JAMES CATANAOAN.
+          <span>© 2024 designed and created by&nbsp;</span>
+          <span>Ody James Catanaoan</span>
         </div>
       </div>
     </section>

@@ -79,15 +79,14 @@ const ProjectsSection: React.FC = () => {
               />
             </div>
             <div className="basicCalcuTextBox">
-              <h1 className="text-2xl font-semibold tracking-[2px]">
-                A Go-To Classic Calculator App
+              <h1 className="text-2xl font-[700] tracking-[2px]">
+                Classic Calculator
               </h1>
               <h2 className="my-4 text-base tracking-[0.5px]">
-                Thrilled to unveil this online tool that simplifies everyday
-                calculations! Designed with essential functions including
-                addition, subtraction, multiplication, division, and percentage
-                calculations. Built with user convenience in mind, it's your
-                go-to solution for quick and accurate computations.
+                Designed with essential functions including addition,
+                subtraction, multiplication, division, and percentage
+                calculations. Built with user convenience in mind, it's a go-to
+                solution for quick and accurate computations.
               </h2>
               <a
                 className="inline-block py-2 px-4 mt-3 ml-3 rounded-lg font-[700] tracking-[1px] text-white bg-[rgb(17,24,39)] transition-colors duration-200 ease-in-out notOnMobile:hover:bg-blue-700 notOnMobile:hover:text-white"
@@ -122,14 +121,13 @@ const ProjectsSection: React.FC = () => {
               />
             </div>
             <div className="taxCalcuTextBox">
-              <h1 className="text-2xl font-semibold tracking-[2px]">
-                Tax Calculator for the Philippines
+              <h1 className="text-2xl font-[700] tracking-[2px]">
+                Tax Calculator for PH Employees
               </h1>
               <h2 className="my-4 text-base tracking-[0.5px]">
-                Excited to introduce this online tool designed to streamline tax
-                deductions and contributions for Filipino employees! Leveraged
-                Material UI to create the user-friendly interface for this web
-                app.
+                Built to streamline tax deductions and contributions for
+                Filipino employees! Leveraged Material UI to create the
+                user-friendly interface for this web app.
               </h2>
               <a
                 className="inline-block py-2 px-4 mt-3 ml-3 rounded-lg font-[700] tracking-[1px] text-white bg-[rgb(17,24,39)] transition-colors duration-200 ease-in-out notOnMobile:hover:bg-blue-700 notOnMobile:hover:text-white"
@@ -164,7 +162,7 @@ const ProjectsSection: React.FC = () => {
               />
             </div>
             <div className="todoAppTextBox">
-              <h1 className="text-2xl font-semibold tracking-[2px]">
+              <h1 className="text-2xl font-semibold tracking-[1px]">
                 To-Do Productivity App
               </h1>
               <h2 className="my-4 text-base tracking-[0.5px]">
@@ -200,14 +198,14 @@ const ProjectsSection: React.FC = () => {
               setLoadMorePopup(false);
             }, 1000);
           }}
-          className="text-blue-700 text-lg font-[500] h-[50px] shadow-[0_4px_8px_0_rgba(0,0,0,0.2),0_6px_20px_0_rgba(0,0,0,0.19);] dark:shadow-none border-2 border-blue-700  dark:text-blue-500 dark:border-blue-500 py-2 px-8 focus:outline-none rounded tracking-[1px] transition-colors duration-300 ease-in-out notOnMobile:hover:bg-blue-600 notOnMobile:hover:border-blue-600 notOnMobile:hover:text-white"
+          className="text-blue-700 text-lg font-[500] shadow-[0_4px_8px_0_rgba(0,0,0,0.2),0_6px_20px_0_rgba(0,0,0,0.19);] dark:shadow-none border-2 border-blue-700  dark:text-blue-500 dark:border-blue-500 py-2 px-8 focus:outline-none rounded tracking-[1px] transition-colors duration-300 ease-in-out notOnMobile:hover:bg-blue-600 notOnMobile:hover:border-blue-600 notOnMobile:hover:text-white"
         >
           Load More
         </button>
       </div>
       <div
         id="comingSoonPopup"
-        className="flex justify-center w-full h-[30px] mt-4 dark:text-white"
+        className="flex justify-center w-full h-[30px] mt-3 dark:text-white"
       >
         <h1
           className={`tracking-[1px] notOnmobile:text-md mobile:tracking-[0.5px] mobile:text-sm ${
@@ -217,6 +215,7 @@ const ProjectsSection: React.FC = () => {
           Exploring new project ideas — coming soon!
         </h1>
       </div>
+      <div className="border-[1px] w-full max-w-[1060px] h-0 mt-[90px] border-slate-300 dark:border-slate-900 mx-auto"/>
     </section>
   );
 };

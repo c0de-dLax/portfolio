@@ -20,9 +20,9 @@ const HomeSection: React.FC = () => {
   return (
     <section
       id="home"
-      className="flex justify-center w-full notOnMobile:pt-[18px] mobile:mt-[0px] text-start scroll-my-[90px]"
+      className="flex flex-col justify-center w-full max-w-[1050px] notOnMobile:pt-[18px] mobile:mt-[0px] text-start scroll-my-[90px] mx-auto"
     >
-      <div className="max-w-[1050px] w-[calc(100vw-10px)] text-black dark:text-white px-[16px] text-[calc(30px+1vw)] pb-6 font-bold">
+      <div className="w-[calc(100vw-10px)] text-black dark:text-white px-[16px] text-[calc(30px+1vw)] pb-6 font-bold">
         <Fade cascade direction="up" damping={0.2} duration={500} triggerOnce>
           <h2 className="pt-[16px]">
             Mabuhay!{" "}
@@ -63,6 +63,7 @@ const HomeSection: React.FC = () => {
           </p>
         </Fade>
       </div>
+      <div className="block border-[1px] w-full h-0 border-slate-300 my-[100px] dark:border-slate-900"/>
     </section>
   );
 };
