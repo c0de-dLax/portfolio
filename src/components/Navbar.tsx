@@ -73,7 +73,7 @@ const Navbar: React.FC = () => {
           <div className="w-[36px] mr-[6px]">
             <img
               alt="Portfolio Logo"
-              src="portfolio/images/myLogo1.webp"
+              src="/portfolio/images/myLogo1.webp"
               decoding="async"
               width="1000"
               height="1000"

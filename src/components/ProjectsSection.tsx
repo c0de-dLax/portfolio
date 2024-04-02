@@ -71,7 +71,7 @@ const ProjectsSection: React.FC = () => {
               <img
                 className="w-full object-cover"
                 alt="Basic Calculator Web App Preview Image"
-                src="portfolio/images/basicCalcuMockUpReady.webp"
+                src="/portfolio/images/basicCalcuMockUpReady.webp"
                 decoding="async"
                 loading="lazy"
                 width="1620"
