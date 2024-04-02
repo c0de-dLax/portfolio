@@ -24,7 +24,7 @@ const ContactSectionNav: React.FC = () => {
   return (
     <section>
       <div className="flex sm:flex-col sm:gap-y-8 mx-auto mt-[34px] max-w-[1100px] justify-center mb-6 text-black dark:text-white font-[500] dark:font-[400]">
-        <div className="sm:w-[268px] text-start text-[20px] mx-auto leading-[56px] tracking-[1px]">
+        <div className="sm:w-[270px] text-start text-[20px] mx-auto leading-[56px] tracking-[1px]">
           <span className="text-blue-700 dark:text-blue-500 text-[30px] tracking-[2px] font-[600] border-b-[3px] border-gray-400 dark:border-[rgb(17,24,39)] pb-[4px] pr-6">
             Links
           </span>
@@ -57,7 +57,7 @@ const ContactSectionNav: React.FC = () => {
             </li>
           </menu>
         </div>
-        <div className="mr-[calc(40px+0.5vw)] ml-auto sm:w-[268px] sm:mx-auto text-start text-[20px] leading-[56px] tracking-[1px]">
+        <div className="mr-[calc(40px+0.5vw)] ml-auto sm:w-[270px] sm:mx-auto text-start text-[20px] leading-[56px] tracking-[1px]">
           <span className="text-blue-700 dark:text-blue-500 text-[30px] tracking-[2px] font-[600] border-b-[3px] border-gray-400 dark:border-[rgb(17,24,39)] pb-[4px] pr-8">
             Contact
           </span>
@@ -74,10 +74,10 @@ const ContactSectionNav: React.FC = () => {
                 </div>
               </a>
             </li>
-            <li className="flex items-center justify-center">
+            <li className="flex items-center justify-center ">
               <a
                 href="mailto:ojtc.ops@gmail.com"
-                className={`w-[238px] notOnMobile:hover:text-blue-700 dark:notOnMobile:hover:text-blue-400 ${
+                className={`w-[246px] notOnMobile:hover:text-blue-700 dark:notOnMobile:hover:text-blue-400 ${
                   isCopied
                     ? "cursor-default pointer-events-none"
                     : "cursor-pointer"
@@ -89,11 +89,12 @@ const ContactSectionNav: React.FC = () => {
                 </span>
               </a>
               {isCopied ? (
-                <LuCopyCheck className="inline-block text-green-500 ml-2 w-[24px] h-auto" />
+                <LuCopyCheck className="inline-block text-green-500 text-[24px] ml-2" />
               ) : (
                 <LuCopy
                   onClick={handleClickToCopy}
-                  className="inline-block cursor-pointer ml-2 w-[24px] h-auto"
+                  onTouchStart={handleClickToCopy}
+                  className="inline-block cursor-pointer ml- text-[24px]2"
                 />
               )}
             </li>
@@ -112,7 +113,7 @@ const ContactSectionNav: React.FC = () => {
             </li>
           </menu>
         </div>
-        <div className="sm:w-[268px] text-start text-[20px] mx-auto leading-[56px] tracking-[1px]">
+        <div className="sm:w-[270px] text-start text-[20px] mx-auto leading-[56px] tracking-[1px]">
           <span className="text-blue-700 dark:text-blue-500 text-[30px] tracking-[2px] font-[600] border-b-[3px] border-gray-400 dark:border-[rgb(17,24,39)] pb-[4px] pr-6">
             Socials
           </span>
