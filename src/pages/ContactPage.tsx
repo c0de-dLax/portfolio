@@ -36,7 +36,14 @@ export default function ContactPage() {
       'textarea[name="Message"]'
     );
 
-    if (!nameInput?.value || !emailInput?.value || !messageInput?.value) {
+    if (
+      !nameInput?.value ||
+      !emailInput?.value ||
+      !emailInput.value.match(
+        /^\s*[^@\s]+@[^\s@.]+\.[a-zA-Z][a-zA-Z0-9]*\s*$/
+      ) ||
+      !messageInput?.value
+    ) {
       setFormInvalid(true);
       setFormValid(false);
 
@@ -161,7 +168,7 @@ export default function ContactPage() {
           Oops!
         </h1>
         <h1 className="text-base px-4">
-          Please fill out all input fields and try again.
+          Please fill out all input fields with valid entries and try again.
         </h1>
         <div
           className={`w-full notOnMobile:h-[8px] mobile:h-[6px] bg-red-600 mt-5 px-0 ${
@@ -229,9 +236,9 @@ export default function ContactPage() {
         <button
           aria-label="Submit Form"
           type="submit"
-          disabled={formSubmitDelay || formInvalid}
+          disabled={formSubmitDelay}
           className={`border-[2px] border-blue-700 dark:border-blue-500 max-w-[160px] w-full h-[40px] tracking-[1px] mx-auto text-blue-700 dark:text-blue-500 font-[600] rounded-md transition duration-300 ease-in-out ${
-            formSubmitDelay || formInvalid
+            formSubmitDelay 
               ? "border-gray-400 text-gray-400 dark:border-gray-400 dark:text-gray-400 cursor-not-allowed"
               : "notOnMobile:hover:text-white notOnMobile:hover:border-blue-600 notOnMobile:hover:bg-blue-600"
           }`}
