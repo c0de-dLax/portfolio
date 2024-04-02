@@ -97,6 +97,7 @@ const ContactSectionNav: React.FC = () => {
                 <LuCopyCheck className="inline-block text-green-600 dark:text-green-500" />
               ) : (
                 <LuCopy
+                  title="Click to copy email to clipboard"
                   onClick={handleClickToCopy}
                   onTouchStart={handleClickToCopy}
                   className="inline-block cursor-pointer"
