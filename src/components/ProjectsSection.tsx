@@ -198,6 +198,7 @@ const ProjectsSection: React.FC = () => {
               setLoadMorePopup(false);
             }, 1000);
           }}
+          disabled={loadMorePopup}
           className="text-blue-700 text-lg font-[500] shadow-[0_4px_8px_0_rgba(0,0,0,0.2),0_6px_20px_0_rgba(0,0,0,0.19);] dark:shadow-none border-2 border-blue-700  dark:text-blue-500 dark:border-blue-500 py-2 px-8 focus:outline-none rounded tracking-[1px] transition-colors duration-300 ease-in-out notOnMobile:hover:bg-blue-600 notOnMobile:hover:border-blue-600 notOnMobile:hover:text-white"
         >
           Load More

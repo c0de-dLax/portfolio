@@ -33,6 +33,7 @@ export default function ContactPageNav() {
                 aria-label="Click to copy email address to clipboard"
                 onClick={clickToCopyEmail}
                 className="flex items-center justify-start xs:justify-center mt-4 text-xl"
+                disabled={isEmailClicked}
               >
                 {isEmailClicked ? (
                   <div className="flex text-green-600 dark:text-green-500">
