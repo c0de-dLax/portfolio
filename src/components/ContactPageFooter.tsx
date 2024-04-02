@@ -18,7 +18,7 @@ export default function ContactPageFooter() {
         <menu className="flex justify-center items-center w-full max-w-[360px] mx-auto text-xl text-black dark:text-white pt-[40px]">
           <li className="mx-auto">
             <Link
-              to="/portfolio/"
+              to="/"
               className="transition duration-300 ease-in-out notOnMobile:hover:text-blue-700 dark:notOnMobile:hover:text-blue-400"
             >
               Home
@@ -27,7 +27,7 @@ export default function ContactPageFooter() {
           <div className="w-0 h-8 border-[1px] border-slate-700" />
           <li className="mx-auto">
             <Link
-              to="/portfolio/#about"
+              to="/#about"
               aria-label="Return to about section"
               className="transition duration-300 ease-in-out notOnMobile:hover:text-blue-700 dark:notOnMobile:hover:text-blue-400"
             >
@@ -37,7 +37,7 @@ export default function ContactPageFooter() {
           <div className="w-0 h-8 border-[1px] border-slate-700" />
           <li className="mx-auto">
             <Link
-              to="/portfolio/#projects"
+              to="/#projects"
               aria-label="Return to projects section"
               className="transition duration-300 ease-in-out notOnMobile:hover:text-blue-700 dark:notOnMobile:hover:text-blue-400"
             >

@@ -39,7 +39,7 @@ const AboutSection: React.FC = () => {
               <img
                 alt="OJ Catanaoan Image"
                 className="rounded-full shadow-[0_4px_8px_0_rgba(0,0,0,0.2),0_6px_20px_0_rgba(0,0,0,0.19);] dark:shadow-none"
-                src="icons/mypic.webp"
+                src="portfolio/icons/mypic.webp"
                 decoding="async"
                 loading="lazy"
                 width="190"
@@ -57,18 +57,6 @@ const AboutSection: React.FC = () => {
               </p>
             </div>
           </Fade>
-          {/* <Fade delay={300} duration={500} direction="down" triggerOnce>
-            <div className="flex justify-start max-w-lg mx-auto">
-              <a
-                className="shadow-[0_4px_8px_0_rgba(0,0,0,0.2),0_6px_20px_0_rgba(0,0,0,0.19);] dark:shadow-none font-[700] mt-2 ml-6 border-2 text-blue-700 border-blue-700  dark:text-blue-500 dark:border-blue-500 py-2 px-4 focus:outline-none rounded text-base tracking-[1px] transition-colors duration-300 ease-in-out notOnMobile:hover:bg-blue-600 notOnMobile:hover:border-blue-600 notOnMobile:hover:text-white"
-                href="https://bit.ly/3SbJAUC"
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                View Resume
-              </a>
-            </div>
-          </Fade> */}
         </div>
         <div id="technologies" className="mt-[30px] px-10">
           <div className="px-5 py-10 max-w-3xl mx-auto text-center">
@@ -99,7 +87,7 @@ const AboutSection: React.FC = () => {
                     <img
                       className="mb-3 w-full"
                       alt="HTML Logo"
-                      src="icons/htmlicon.webp"
+                      src="portfolio/icons/htmlicon.webp"
                       decoding="async"
                       loading="lazy"
                       width="283"
@@ -117,7 +105,7 @@ const AboutSection: React.FC = () => {
                     <img
                       alt="CSS Logo"
                       className="mb-3"
-                      src="icons/cssicon.webp"
+                      src="portfolio/icons/cssicon.webp"
                       decoding="async"
                       loading="lazy"
                       width="281"
@@ -135,7 +123,7 @@ const AboutSection: React.FC = () => {
                     <img
                       alt="Javascript Logo"
                       className="mb-3 w-[90%] ml-auto mr-auto"
-                      src="icons/jsicon.webp"
+                      src="portfolio/icons/jsicon.webp"
                       decoding="async"
                       loading="lazy"
                       width="500"
@@ -164,7 +152,7 @@ const AboutSection: React.FC = () => {
                     <img
                       alt="React js Logo"
                       className="mb-2"
-                      src="icons/reactlogo.webp"
+                      src="portfolio/icons/reactlogo.webp"
                       decoding="async"
                       loading="lazy"
                       width="500"
@@ -182,7 +170,7 @@ const AboutSection: React.FC = () => {
                     <img
                       alt="Tailwind CSS Logo"
                       className="mb-[22px] mt-[20px]"
-                      src="icons/tailwind.webp"
+                      src="portfolio/icons/tailwind.webp"
                       decoding="async"
                       loading="lazy"
                       width="287"
@@ -200,7 +188,7 @@ const AboutSection: React.FC = () => {
                     <img
                       alt="Nodejs Logo"
                       className="mb-[8px] ml-[6px] mt-1"
-                      src="icons/nodejslogo.webp"
+                      src="portfolio/icons/nodejslogo.webp"
                       decoding="async"
                       loading="lazy"
                       width="500"

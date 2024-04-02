@@ -64,7 +64,7 @@ const Navbar: React.FC = () => {
     <header className="shadow-md w-full h-[70px] flex justify-center bg-white border-gray-300 dark:border-[rgb(17,24,39)] dark:bg-[rgb(2,8,23)] border-b-2 overflow-hidden top-0 sticky z-10">
       <div className="w-[1060px] flex items-center gap-[calc(20px+0.5vw)] text-[14px] text-black dark:text-white font-semibold px-[16px] focus:outline-none">
         <Link
-          to="/portfolio/"
+          to="/"
           onClick={() => {
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
           }}
@@ -72,8 +72,8 @@ const Navbar: React.FC = () => {
         >
           <div className="w-[36px] mr-[6px]">
             <img
-              src="images/myLogo1.webp"
               alt="Portfolio Logo"
+              src="portfolio/images/myLogo1.webp"
               decoding="async"
               width="1000"
               height="1000"
@@ -82,21 +82,21 @@ const Navbar: React.FC = () => {
           Ody James Catanaoan
         </Link>
         <Link
-          to="/portfolio/#about"
+          to="/#about"
           aria-label="Jump to about section"
           className="navLink w-fit pt-[5px] pb-[7px] px-[10px] rounded-[8px] notOnMobile:hover:bg-gray-200 dark:notOnMobile:hover:bg-[rgb(27,36,51)] transition duration-300 ease-in-out"
         >
           About Me
         </Link>
         <Link
-          to="/portfolio/#projects"
+          to="/#projects"
           aria-label="Jump to projects section"
           className="navLink w-fit pt-[5px] pb-[7px] px-[10px] rounded-[8px] notOnMobile:hover:bg-gray-200 dark:notOnMobile:hover:bg-[rgb(27,36,51)] transition duration-300 ease-in-out"
         >
           Projects
         </Link>
         <Link
-          to="/portfolio/#contact"
+          to="/#contact"
           aria-label="Jump to contact section"
           className="navLink w-fit pt-[5px] pb-[7px] px-[10px] rounded-[8px] notOnMobile:hover:bg-gray-200 dark:notOnMobile:hover:bg-[rgb(27,36,51)] transition duration-300 ease-in-out"
         >
@@ -145,7 +145,7 @@ const Navbar: React.FC = () => {
           </li>
           <li>
             <Link
-              to="/portfolio/"
+              to="/"
               onClick={() => {
                 closeNav();
               }}
@@ -157,7 +157,7 @@ const Navbar: React.FC = () => {
           </li>
           <li>
             <Link
-              to="/portfolio/#about"
+              to="/#about"
               onClick={() => {
                 closeNav();
               }}
@@ -169,7 +169,7 @@ const Navbar: React.FC = () => {
           </li>
           <li>
             <Link
-              to="/portfolio/#projects"
+              to="/#projects"
               onClick={() => {
                 closeNav();
               }}
@@ -181,7 +181,7 @@ const Navbar: React.FC = () => {
           </li>
           <li>
             <Link
-              to="/portfolio/contactform"
+              to="/contactform"
               onClick={() => {
                 closeNav();
                 window.scrollTo({ top: 0, left: 0, behavior: "smooth" });

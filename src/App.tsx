@@ -6,12 +6,12 @@ import PageUnderConstruction from "./pages/PageUnderConstruction";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/portfolio">
       <Routes>
-        <Route path="/portfolio/" element={<HomePage />} />
-        <Route path="/portfolio/contactform" element={<ContactPage />} />
-        <Route path="/portfolio/todoproductivityapp" element={<PageUnderConstruction />} />
-        <Route path="/portfolio/*" element={<ErrorPage />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/contactform" element={<ContactPage />} />
+        <Route path="/todoproductivityapp" element={<PageUnderConstruction />} />
+        <Route path="*" element={<ErrorPage />} />
       </Routes>
     </Router>
   );
