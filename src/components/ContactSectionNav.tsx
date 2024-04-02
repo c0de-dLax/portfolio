@@ -91,12 +91,12 @@ const ContactSectionNav: React.FC = () => {
                 </div>
               </a>
               {isCopied ? (
-                <LuCopyCheck className="inline-block text-green-500 text-[24px] ml-2" />
+                <LuCopyCheck className="inline-block text-green-500 ml-2" />
               ) : (
                 <LuCopy
                   onClick={handleClickToCopy}
                   onTouchStart={handleClickToCopy}
-                  className="inline-block cursor-pointer ml- text-[24px]2"
+                  className="inline-block cursor-pointer ml-2"
                 />
               )}
             </li>
