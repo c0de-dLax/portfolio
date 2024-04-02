@@ -236,9 +236,9 @@ export default function ContactPage() {
         <button
           aria-label="Submit Form"
           type="submit"
-          disabled={formSubmitDelay}
+          disabled={formSubmitDelay || formInvalid}
           className={`border-[2px] border-blue-700 dark:border-blue-500 max-w-[160px] w-full h-[40px] tracking-[1px] mx-auto text-blue-700 dark:text-blue-500 font-[600] rounded-md transition duration-300 ease-in-out ${
-            formSubmitDelay 
+            formSubmitDelay || formInvalid
               ? "border-gray-400 text-gray-400 dark:border-gray-400 dark:text-gray-400 cursor-not-allowed"
               : "notOnMobile:hover:text-white notOnMobile:hover:border-blue-600 notOnMobile:hover:bg-blue-600"
           }`}
