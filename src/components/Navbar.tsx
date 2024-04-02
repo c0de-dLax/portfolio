@@ -16,7 +16,7 @@ import {
 
 const Navbar: React.FC = () => {
   const [sidePanelOpen, setSidePanelOpen] = useState(false);
-  const initialTheme = localStorage.getItem("theme") || "dark";
+  const initialTheme = localStorage.getItem("themeForPortfolio") || "dark";
   const [theme, setTheme] = useState(initialTheme);
 
   useEffect(() => {
@@ -48,7 +48,7 @@ const Navbar: React.FC = () => {
   const selectThemeHandler = (newTheme: string) => {
     if (newTheme === "dark" || newTheme === "light") {
       setTheme(newTheme);
-      localStorage.setItem("theme", newTheme);
+      localStorage.setItem("themeForPortfolio", newTheme);
     }
   };
 
