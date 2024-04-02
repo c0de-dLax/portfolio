@@ -74,19 +74,21 @@ const ContactSectionNav: React.FC = () => {
                 </div>
               </a>
             </li>
-            <li className="flex items-center justify-center ">
+            <li className="flex items-center justify-center">
               <a
                 href="mailto:ojtc.ops@gmail.com"
-                className={`w-[246px] notOnMobile:hover:text-blue-700 dark:notOnMobile:hover:text-blue-400 ${
+                className={`${
                   isCopied
                     ? "cursor-default pointer-events-none"
                     : "cursor-pointer"
                 }`}
               >
-                <EnvelopeIcon className="inline-block w-[28px] mr-[10px]" />
-                <span className={`${isCopied ? "text-green-500" : ""}`}>
-                  {isCopied ? "Email Copied" : "ojtc.ops@gmail.com"}
-                </span>
+                <div className="w-[250px] notOnMobile:hover:text-blue-700 dark:notOnMobile:hover:text-blue-400">
+                  <EnvelopeIcon className="inline-block w-[28px] mr-[10px]" />
+                  <span className={`${isCopied ? "text-green-500" : ""}`}>
+                    {isCopied ? "Email Copied" : "ojtc.ops@gmail.com"}
+                  </span>
+                </div>
               </a>
               {isCopied ? (
                 <LuCopyCheck className="inline-block text-green-500 text-[24px] ml-2" />
