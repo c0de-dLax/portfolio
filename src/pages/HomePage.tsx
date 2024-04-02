@@ -13,12 +13,16 @@ export default function HomePage() {
 
       pageSection.forEach((section) => {
         const rect = section.getBoundingClientRect();
-        if (rect.top >= 0 && rect.top <= 150) {
+        if (rect.top >= 0 && rect.top <= 300) {
           const oldHash = window.location.hash;
           const newHash = "#" + section.id;
           if (newHash !== oldHash) {
             const location = window.location.toString().split("#")[0];
-            window.history.replaceState(null, "", location + newHash);
+            if (newHash === "#home") {
+              window.history.replaceState(null, "", location);
+            } else {
+              window.history.replaceState(null, "", location + newHash);
+            } 
           }
         }
       });
