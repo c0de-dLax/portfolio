@@ -1,8 +1,10 @@
 import { useState } from "react";
 import {
+  FaCircle,
+  FaGithub,
   FaLinkedin,
+  FaSquare,
   FaSquareFacebook,
-  FaSquareGithub,
   FaSquareXTwitter,
 } from "react-icons/fa6";
 import { LuCopy, LuCopyCheck } from "react-icons/lu";
@@ -68,15 +70,17 @@ export default function ContactPageNav() {
           </div>
         </div>
       </div>
-      <menu className="flex w-full max-w-[660px] justify-center items-center text-start text-sm leading-[36px] mt-32 mb-24 mx-auto tracking-[1px] text-black font-[500] dark:text-white dark:font-[400]">
+      <menu className="flex w-full max-w-[660px] justify-center items-center text-start text-sm leading-[26px] mt-32 mb-24 mx-auto tracking-[1px] text-black font-[500] dark:text-white dark:font-[400]">
         <li className="mx-auto">
           <a
             href="https://github.com/c0de-dLax"
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="flex flex-col items-center justify-center notOnMobile:hover:text-blue-700 dark:notOnMobile:hover:text-blue-400">
-              <FaSquareGithub className="w-[32px] h-[32px]" />
+            <div className="flex flex-col items-center justify-center">
+              <FaGithub className="w-[30px] h-[30px] z-[2] text-black dark:text-white" />
+              <FaCircle className="mt-[-26px] w-[26px] h-[26px] z-[1] text-white dark:text-black"/>
+              <FaSquare className="mt-[-30px] w-[30px] h-[29px] z-[0] bg-black dark:bg-white rounded-[3px]" />
               <span className="opacity-[0.6]">Github</span>
             </div>
           </a>
@@ -87,8 +91,9 @@ export default function ContactPageNav() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="flex flex-col items-center justify-center notOnMobile:hover:text-blue-700 dark:notOnMobile:hover:text-blue-400">
-              <FaLinkedin className="w-[32px] h-[32px]" />
+            <div className="flex flex-col items-center justify-center">
+              <FaLinkedin className="w-[33px] h-[33px] text-[rgb(10,102,194)] z-[1]" />
+              <FaSquare className="mt-[-28px] ml-[1px] w-[24px] h-[28px] z-[0] text-white" />
               <span className="opacity-[0.6]">LinkedIn</span>
             </div>
           </a>
@@ -99,8 +104,11 @@ export default function ContactPageNav() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="flex flex-col items-center justify-center notOnMobile:hover:text-blue-700 dark:notOnMobile:hover:text-blue-400">
-              <FaSquareFacebook className="w-[32px] h-[32px]" />
+            <div className="flex flex-col items-center justify-center">
+              <div className="flex flex-col">
+              <FaSquareFacebook className="w-[33px] h-[33px] text-[rgb(8,102,255)] z-[1]" />
+              <FaSquare className="mt-[-28px] ml-[4px] w-[24px] h-[28px] z-[0] text-white" />
+              </div>
               <span className="opacity-[0.6]">Facebook</span>
             </div>
           </a>
@@ -111,8 +119,9 @@ export default function ContactPageNav() {
             target="_blank"
             rel="noopener noreferrer"
           >
-            <div className="flex flex-col items-center justify-center notOnMobile:hover:text-blue-700 dark:notOnMobile:hover:text-blue-400">
-              <FaSquareXTwitter className="w-[32px] h-[32px]" />
+            <div className="flex flex-col items-center justify-center">
+              <FaSquareXTwitter className="w-[33px] h-[33px] text-black z-[1]" />
+              <FaSquare className="mt-[-29px] w-[26px] h-[28px] z-[0] text-white" />
               <span className="opacity-[0.6]">X</span>
             </div>
           </a>
