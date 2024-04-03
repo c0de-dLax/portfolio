@@ -79,7 +79,7 @@ export default function ContactPageNav() {
           >
             <div className="flex flex-col items-center justify-center">
               <FaGithub className="w-[30px] h-[30px] z-[2] text-black dark:text-white" />
-              <FaCircle className="mt-[-26px] w-[26px] h-[26px] z-[1] text-white dark:text-black"/>
+              <FaCircle className="mt-[-25px] w-[25px] h-[25px] z-[1] text-white dark:text-black"/>
               <FaSquare className="mt-[-30px] w-[30px] h-[29px] z-[0] bg-black dark:bg-white rounded-[3px]" />
               <span className="opacity-[0.6]">Github</span>
             </div>
@@ -93,7 +93,7 @@ export default function ContactPageNav() {
           >
             <div className="flex flex-col items-center justify-center">
               <FaLinkedin className="w-[33px] h-[33px] text-[rgb(10,102,194)] z-[1]" />
-              <FaSquare className="mt-[-28px] ml-[1px] w-[24px] h-[28px] z-[0] text-white" />
+              <FaSquare className="mt-[-30px] ml-[1px] w-[24px] h-[28px] z-[0] text-white" />
               <span className="opacity-[0.6]">LinkedIn</span>
             </div>
           </a>
