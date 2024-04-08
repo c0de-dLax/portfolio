@@ -5,6 +5,7 @@ import { IdentificationIcon } from "@heroicons/react/20/solid";
 import { Fade, Zoom } from "react-awesome-reveal";
 
 const AboutSection: React.FC = () => {
+
   const location = useLocation();
   useEffect(() => {
     if (location.hash) {
@@ -20,7 +21,7 @@ const AboutSection: React.FC = () => {
   return (
     <section
       id="about"
-      className="mb-36 scroll-mt-[100px] mobile:scroll-mt-[90px] max-w-[1060px] mx-auto text-black dark:text-white"
+      className="mb-36 scroll-mt-[40px] mobile:scroll-mt-[20px] max-w-[1060px] mx-auto text-black dark:text-white"
     >
       <div className="notOnMobile:mt-[50px] mobile:mt-4 text-[calc(26px+1vw)] px-5 pt-8 notOnMobile:pb-12 mobile:pb-6">
         <div className="flex relative justify-center mx-auto text-[1em] max-w-[calc(280px+10vw)]">

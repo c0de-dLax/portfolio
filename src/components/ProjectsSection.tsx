@@ -49,7 +49,7 @@ const ProjectsSection: React.FC = () => {
   return (
     <section
       id="projects"
-      className="mt-4 mb-[120px] notOnMobile:scroll-my-[100px] mobile:scroll-my-[80px]"
+      className="mt-4 mb-[120px] notOnMobile:scroll-my-[40px] mobile:scroll-my-[20px]"
     >
       <div className="mx-auto text-[calc(32px+1vw)] px-5 py-10 max-w-[calc(200px+10vw)] dark:text-white">
         <div className="flex relative justify-center">
