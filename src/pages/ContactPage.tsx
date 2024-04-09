@@ -17,7 +17,7 @@ export default function ContactPage() {
   const [nameFormEmpty, setNameFormEmpty] = useState(false);
   const [emailFormEmpty, setEmailFormEmpty] = useState(false);
   const [messageFormEmpty, setMessageFormEmpty] = useState(false);
-  const [timeoutId, setTimeoutId] = useState(0);
+  const [timeoutId, setTimeoutId] = useState<NodeJS.Timeout | null>(null);
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     const formElement = document.querySelector("form");
@@ -47,7 +47,8 @@ export default function ContactPage() {
       setFormInvalid(true);
       setFormValid(false);
 
-      const formInvalidTimeout = setTimeout(() => {
+      let formInvalidTimeout: ReturnType<typeof setTimeout>;
+      formInvalidTimeout = setTimeout(() => {
         setFormInvalid(false);
       }, 2500);
 
@@ -119,7 +120,9 @@ export default function ContactPage() {
   const closeNoticeCard = () => {
     setFormValid(false);
     setFormInvalid(false);
-    clearTimeout(timeoutId);
+    if (timeoutId !== null) {
+      clearTimeout(timeoutId);
+  }
   };
 
   return (
