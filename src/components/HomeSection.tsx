@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { Fade } from "react-awesome-reveal";
-import { useLocation } from "react-router-dom";
+import { Link, useLocation } from "react-router-dom";
 
 const HomeSection: React.FC = () => {
   const [celebrateAnimated, setCelebrateAnimated] = useState(false);
@@ -15,7 +15,7 @@ const HomeSection: React.FC = () => {
     } else {
       window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
     }
-  }, [location,]);
+  }, [location]);
 
   return (
     <section
@@ -48,22 +48,24 @@ const HomeSection: React.FC = () => {
           <p className="max-w-[850px] dark:max-w-[840px] pt-[20px] font-[400] dark:font-[200]">
             An aspiring Front-End Developer from the Philippines, focusing on
             web apps and responsive design. Learn more&nbsp;
-            <span className="textHighlight bg-gradient-to-r from-[rgb(209,213,219)_50%] to-[rgb(255,255,255)_50%] dark:bg-gradient-to-r dark:from-[rgb(23,32,52)_50%] dark:to-[rgb(2,8,23)_50%]">
-              <a href="#about" className="font-[700] dark:font-[500]">
-                about me
-              </a>
-            </span>
-            {" "}or my{" "}
-            <span className="textHighlight bg-gradient-to-r from-[rgb(209,213,219)_50%] to-[rgb(255,255,255)_50%] dark:bg-gradient-to-r dark:from-[rgb(23,32,52)_50%] dark:to-[rgb(2,8,23)_50%]">
-              <a href="#projects" className="font-[700] dark:font-[500]">
-                projects
-              </a>
-            </span>
+            <Link
+              to="/#about"
+              className="textHighlight bg-gradient-to-r from-[rgb(209,213,219)_50%] to-[rgb(255,255,255)_50%] dark:bg-gradient-to-r dark:from-[rgb(23,32,52)_50%] dark:to-[rgb(2,8,23)_50%]"
+            >
+              <span className="font-[700] dark:font-[500]">about me</span>
+            </Link>{" "}
+            or my{" "}
+            <Link
+              to="/#projects"
+              className="textHighlight bg-gradient-to-r from-[rgb(209,213,219)_50%] to-[rgb(255,255,255)_50%] dark:bg-gradient-to-r dark:from-[rgb(23,32,52)_50%] dark:to-[rgb(2,8,23)_50%]"
+            >
+              <span className="font-[700] dark:font-[500]">projects</span>
+            </Link>
             .
           </p>
         </Fade>
       </div>
-      <div className="block border-[1px] w-full h-0 border-slate-300 my-[100px] dark:border-slate-900"/>
+      <div className="block border-[1px] w-full h-0 border-slate-300 my-[100px] dark:border-slate-900" />
     </section>
   );
 };
