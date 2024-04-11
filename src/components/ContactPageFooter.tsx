@@ -10,7 +10,7 @@ export default function ContactPageFooter() {
           <FaAnglesUp
             aria-label="Return to top"
             onClick={() => {
-              window.scrollTo(0, 0);
+              window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
             }}
             className="w-full h-auto"
           />
