@@ -89,8 +89,7 @@ const ContactSection: React.FC = () => {
         <ContactLinksSection />
       </div>
       <div className="relative w-[100%] bg-gray-300 dark:bg-[rgb(17,24,39)]">
-        <Link
-          to="/"
+        <button
           aria-label="Return to top"
           onClick={() => {
             window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
@@ -98,10 +97,10 @@ const ContactSection: React.FC = () => {
           className="absolute flex justify-center items-center p-2 bg-blue-600 rounded-full left-1/2 ml-[-12px] text-white w-[36px] h-[36px] mt-[-20px] cursor-pointer customBounce"
         >
           <FaAnglesUp className="w-full h-auto" />
-        </Link>
+        </button>
         <div
           id="copyright"
-          className="flex xs:flex-col justify-center items-center w-full text-black font-[500] dark:text-white dark:font-[400] pt-10 pb-4 mx-auto text-[14px] tracking-[0.5px]"
+          className="flex xs:flex-col justify-center items-center w-full text-black font-[500] dark:text-white dark:font-[400] pt-8 pb-4 mx-auto text-[14px] tracking-[0.5px]"
         >
           <span>© 2024 designed and created by&nbsp;</span>
           <span>Ody James Catanaoan</span>

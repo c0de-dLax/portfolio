@@ -32,9 +32,6 @@ const ContactSectionNav: React.FC = () => {
             <li>
               <Link
                 to="/"
-                onClick={() => {
-                  window.scrollTo(0, 0);
-                }}
                 className="transition duration-300 ease-in-out notOnMobile:hover:text-blue-700 dark:notOnMobile:hover:text-blue-400"
               >
                 Home
