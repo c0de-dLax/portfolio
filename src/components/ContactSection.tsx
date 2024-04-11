@@ -43,7 +43,7 @@ const ContactSection: React.FC = () => {
   `;
 
   return (
-    <section id="contact" className="scroll-my-[10px]">
+    <section id="contact" className="scroll-my-[70px]">
       <div className="text-black dark:text-white py-6 font-[500] dark:font-[400]">
         <div className="flex relative justify-center mx-auto text-[calc(30px+1vw)] py-10 max-w-[calc(260px+10vw)]">
           <div className="absolute z-0 left-1/2 ml-[-2.55em]">

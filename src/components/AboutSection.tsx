@@ -21,9 +21,9 @@ const AboutSection: React.FC = () => {
   return (
     <section
       id="about"
-      className="mb-36 scroll-mt-[40px] mobile:scroll-mt-[20px] max-w-[1060px] mx-auto text-black dark:text-white"
+      className="mb-36 scroll-mt-[100px] mobile:scroll-mt-[80px] max-w-[1060px] mx-auto text-black dark:text-white"
     >
-      <div className="notOnMobile:mt-[50px] mobile:mt-4 text-[calc(26px+1vw)] px-5 pt-8 notOnMobile:pb-12 mobile:pb-6">
+      <div className="notOnMobile:mt-[30px] mobile:mt-4 text-[calc(26px+1vw)] px-5 pt-8 notOnMobile:pb-12 mobile:pb-6">
         <div className="flex relative justify-center mx-auto text-[1em] max-w-[calc(280px+10vw)]">
           <div className="absolute z-[0]">
             <IdentificationIcon className="my-[-4em] inline-block w-[6em] text-blue-500 opacity-[70%] dark:opacity-[10%]" />

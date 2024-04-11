@@ -61,7 +61,7 @@ const Navbar: React.FC = () => {
   }, [theme]);
 
   return (
-    <header className="shadow-md w-full h-[70px] flex justify-center bg-white border-gray-300 dark:border-[rgb(17,24,39)] dark:bg-[rgb(2,8,23)] border-b-2 overflow-hidden top-0 sticky z-10">
+    <header className="sticky z-10 top-0 flex justify-center w-full h-[70px] border-b-2 overflow-hidden shadow-md bg-white border-gray-300 dark:border-[rgb(17,24,39)] dark:bg-[rgb(2,8,23)]">
       <div className="w-[1060px] flex items-center gap-[calc(20px+0.5vw)] text-[14px] text-black dark:text-white font-semibold px-[16px] focus:outline-none">
         <Link
           to="/"
