@@ -1,12 +1,13 @@
 import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import HomeSection from "../components/HomeSection";
 import Navbar from "../components/Navbar";
 import AboutSection from "../components/AboutSection";
 import ProjectsSection from "../components/ProjectsSection";
 import ContactSection from "../components/ContactSection";
 
-export default function HomePage() {
-  // Updates the url hash depending on what section is within the viewport
+const HomePage = () => {
+
   useEffect(() => {
     const handleScroll = () => {
       const pageSection = document.querySelectorAll("section[id]");
@@ -22,7 +23,7 @@ export default function HomePage() {
               window.history.replaceState(null, "", location);
             } else {
               window.history.replaceState(null, "", location + newHash);
-            } 
+            }
           }
         }
       });
@@ -35,6 +36,18 @@ export default function HomePage() {
     };
   }, []);
 
+  const location = useLocation();
+  useEffect(() => {
+    if (location.hash) {
+      let elem = document.getElementById(location.hash.slice(1));
+      if (elem) {
+        elem.scrollIntoView({ behavior: "smooth" });
+      }
+    } else {
+      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+    }
+  }, [location]);
+
   return (
     <main className="bg-white dark:bg-[rgb(2,8,23)]">
       <Navbar />
@@ -44,4 +57,6 @@ export default function HomePage() {
       <ContactSection />
     </main>
   );
-}
+};
+
+export default HomePage;

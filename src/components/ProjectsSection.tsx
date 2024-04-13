@@ -1,11 +1,11 @@
-import { useEffect, useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { useState } from "react";
+import { Link } from "react-router-dom";
 
 import { keyframes } from "@emotion/react";
 import { CodeBracketIcon } from "@heroicons/react/24/solid";
 import Reveal from "react-awesome-reveal";
 
-const ProjectsSection: React.FC = () => {
+const ProjectsSection = () => {
   const [loadMorePopup, setLoadMorePopup] = useState(false);
 
   const openPopupOnBtnHover = () => {
@@ -15,18 +15,6 @@ const ProjectsSection: React.FC = () => {
   const closePopupOnBtnHover = () => {
     setLoadMorePopup(false);
   };
-
-  const location = useLocation();
-  useEffect(() => {
-    if (location.hash) {
-      let elem = document.getElementById(location.hash.slice(1));
-      if (elem) {
-        elem.scrollIntoView({ behavior: "smooth" });
-      }
-    } else {
-      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-    }
-  }, [location]);
 
   const slideFromLeftAnimation = keyframes`
     from {

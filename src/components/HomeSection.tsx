@@ -1,22 +1,9 @@
-import React, { useState, useEffect } from "react";
+import { useState } from "react";
 import { Fade } from "react-awesome-reveal";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 
-const HomeSection: React.FC = () => {
+const HomeSection = () => {
   const [celebrateAnimated, setCelebrateAnimated] = useState(false);
-
-  const location = useLocation();
-  useEffect(() => {
-    if (location.hash) {
-      let elem = document.getElementById(location.hash.slice(1));
-      if (elem) {
-        elem.scrollIntoView({ behavior: "smooth" });
-      }
-    } else {
-      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-    }
-  }, [location]);
-
   return (
     <section
       id="home"

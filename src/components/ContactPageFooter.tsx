@@ -2,7 +2,7 @@ import { Link } from "react-router-dom";
 
 import { FaAnglesUp } from "react-icons/fa6";
 
-export default function ContactPageFooter() {
+const ContactPageFooter = () => {
   return (
     <section>
       <div className="relative w-full h-full bg-gray-300 dark:bg-[rgb(17,24,39)]">
@@ -55,4 +55,6 @@ export default function ContactPageFooter() {
       </div>
     </section>
   );
-}
+};
+
+export default ContactPageFooter;

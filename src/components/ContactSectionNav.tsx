@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 import { EnvelopeIcon, MapPinIcon } from "@heroicons/react/24/solid";
 
@@ -10,7 +10,7 @@ import {
 } from "react-icons/fa6";
 import { LuCopy, LuCopyCheck } from "react-icons/lu";
 
-const ContactSectionNav: React.FC = () => {
+const ContactSectionNav = () => {
   const [isCopied, setIsCopied] = useState(false);
 
   const handleClickToCopy = () => {

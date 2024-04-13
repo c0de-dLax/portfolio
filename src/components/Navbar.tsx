@@ -1,20 +1,17 @@
-import React, { useEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
 import { FaSun, FaMoon } from "react-icons/fa";
-
 import {
   Bars3Icon,
   ChatBubbleLeftRightIcon,
   CodeBracketSquareIcon,
   HomeIcon,
-  // SunIcon,
   UserIcon,
   XMarkIcon,
 } from "@heroicons/react/24/solid";
-// import { MoonIcon } from "@heroicons/react/16/solid";
 
-const Navbar: React.FC = () => {
+const Navbar = () => {
   const [sidePanelOpen, setSidePanelOpen] = useState(false);
   const initialTheme = localStorage.getItem("themeForPortfolio") || "dark";
   const [theme, setTheme] = useState(initialTheme);
@@ -25,25 +22,15 @@ const Navbar: React.FC = () => {
         setSidePanelOpen(false);
       }
     };
-    // Call handleResize on component mount
+
     handleWindowResize();
 
-    // Add event listener for window resize
     window.addEventListener("resize", handleWindowResize);
 
-    // Cleanup event listener on component unmount
     return () => {
       window.removeEventListener("resize", handleWindowResize);
     };
   }, []);
-
-  const openNav = () => {
-    setSidePanelOpen(true);
-  };
-
-  const closeNav = () => {
-    setSidePanelOpen(false);
-  };
 
   const selectThemeHandler = (newTheme: string) => {
     if (newTheme === "dark" || newTheme === "light") {
@@ -59,6 +46,14 @@ const Navbar: React.FC = () => {
       document.body.classList.remove("dark");
     }
   }, [theme]);
+
+  const openNav = () => {
+    setSidePanelOpen(true);
+  };
+
+  const closeNav = () => {
+    setSidePanelOpen(false);
+  };
 
   return (
     <header className="sticky z-10 top-0 flex justify-center w-full h-[70px] border-b-2 overflow-hidden shadow-md bg-white border-gray-300 dark:border-[rgb(17,24,39)] dark:bg-[rgb(2,8,23)]">

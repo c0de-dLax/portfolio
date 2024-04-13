@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 
-export default function ErrorPage() {
+const ErrorPage = () => {
   return (
     <main>
       <h1 className="text-[4em] text-center px-2 mt-6">Oops!</h1>
@@ -18,4 +18,6 @@ export default function ErrorPage() {
       </h3>
     </main>
   );
-}
+};
+
+export default ErrorPage;

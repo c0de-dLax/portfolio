@@ -1,23 +1,7 @@
-import React, { useEffect } from "react";
-import { useLocation } from "react-router-dom";
-
 import { IdentificationIcon } from "@heroicons/react/20/solid";
 import { Fade, Zoom } from "react-awesome-reveal";
 
-const AboutSection: React.FC = () => {
-
-  const location = useLocation();
-  useEffect(() => {
-    if (location.hash) {
-      let elem = document.getElementById(location.hash.slice(1));
-      if (elem) {
-        elem.scrollIntoView({ behavior: "smooth" });
-      }
-    } else {
-      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-    }
-  }, [location]);
-
+const AboutSection = () => {
   return (
     <section
       id="about"

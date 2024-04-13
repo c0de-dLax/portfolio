@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
 import ContactLinksSection from "./ContactSectionNav";
 
 import { keyframes } from "@emotion/react";
@@ -7,19 +6,7 @@ import Reveal from "react-awesome-reveal";
 import { ChatBubbleLeftRightIcon } from "@heroicons/react/24/solid";
 import { FaAnglesUp } from "react-icons/fa6";
 
-const ContactSection: React.FC = () => {
-  const location = useLocation();
-  useEffect(() => {
-    if (location.hash) {
-      let elem = document.getElementById(location.hash.slice(1));
-      if (elem) {
-        elem.scrollIntoView({ behavior: "smooth" });
-      }
-    } else {
-      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-    }
-  }, [location,]);
-  
+const ContactSection = () => {
   const revealFromLeftBannerAnimation = keyframes`
     from {
       transform: scaleX(0);
