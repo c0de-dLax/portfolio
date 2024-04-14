@@ -158,8 +158,11 @@ const ProjectsSection = () => {
                 to seize the day!
               </h2>
               <Link
-                className="inline-block py-2 px-4 mt-3 ml-3 rounded-lg font-[700] tracking-[1px] text-white bg-[rgb(17,24,39)] transition-colors duration-200 ease-in-out notOnMobile:hover:bg-blue-700 notOnMobile:hover:text-white"
                 to="/todoproductivityapp"
+                onClick={() => {
+                  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                }}
+                className="inline-block py-2 px-4 mt-3 ml-3 rounded-lg font-[700] tracking-[1px] text-white bg-[rgb(17,24,39)] transition-colors duration-200 ease-in-out notOnMobile:hover:bg-blue-700 notOnMobile:hover:text-white"
               >
                 Live Soon!
               </Link>
@@ -204,7 +207,7 @@ const ProjectsSection = () => {
           Exploring new project ideas — coming soon!
         </h1>
       </div>
-      <div className="border-[1px] w-full max-w-[1060px] h-0 mt-[90px] border-slate-300 dark:border-slate-900 mx-auto"/>
+      <div className="border-[1px] w-full max-w-[1060px] h-0 mt-[90px] border-slate-300 dark:border-slate-900 mx-auto" />
     </section>
   );
 };
