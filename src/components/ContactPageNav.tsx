@@ -34,18 +34,18 @@ const ContactPageNav = () => {
               <button
                 aria-label="Click to copy email address to clipboard"
                 onClick={clickToCopyEmail}
-                className="flex items-center justify-start xs:justify-center mt-4 text-xl"
+                className="flex items-center justify-start mt-[18px] xs:justify-center "
                 disabled={isEmailClicked}
               >
                 {isEmailClicked ? (
                   <div className="flex text-green-600 dark:text-green-500">
-                    <LuCopyCheck className="mr-2" />
-                    Email copied to clipboard
+                    <LuCopyCheck className="mr-2 text-xl" />
+                    <span className="text-lg">Email copied to clipboard</span>
                   </div>
                 ) : (
                   <div className="flex text-blue-700 dark:text-blue-500 ">
-                    <LuCopy className="mr-2" />
-                    Click here to copy email
+                    <LuCopy className="mr-2 text-xl" />
+                    <span className="text-lg">Click here to copy email</span>
                   </div>
                 )}
               </button>
@@ -64,13 +64,13 @@ const ContactPageNav = () => {
           </div>
           <div className="flex-col text-3xl xs:text-center w-[300px]">
             <span className="block opacity-[0.6] text-[26px]">
-              Current living in
+              Current living in the
             </span>
             <span className="block mt-1 font-[500]">Philippines</span>
           </div>
         </div>
       </div>
-      <menu className="flex w-full max-w-[660px] justify-center items-center text-start text-sm leading-[26px] mt-32 mb-24 mx-auto tracking-[1px] text-black font-[500] dark:text-white dark:font-[400]">
+      <menu className="flex w-full max-w-[1020px] justify-center items-center text-start text-sm leading-[26px] mt-32 mb-24 mx-auto tracking-[1px] text-black font-[500] dark:text-white dark:font-[400]">
         <li className="mx-auto">
           <a
             href="https://github.com/c0de-dLax"
