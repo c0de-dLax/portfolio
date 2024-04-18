@@ -11,10 +11,13 @@ import {
   XMarkIcon,
 } from "@heroicons/react/24/solid";
 
-const Navbar = () => {
+interface NavbarProps {
+  selectThemeHandler: (newTheme: string) => void;
+  theme: string;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ selectThemeHandler, theme }) => {
   const [sidePanelOpen, setSidePanelOpen] = useState(false);
-  const initialTheme = localStorage.getItem("themeForPortfolio") || "dark";
-  const [theme, setTheme] = useState(initialTheme);
 
   useEffect(() => {
     const handleWindowResize = () => {
@@ -31,21 +34,6 @@ const Navbar = () => {
       window.removeEventListener("resize", handleWindowResize);
     };
   }, []);
-
-  const selectThemeHandler = (newTheme: string) => {
-    if (newTheme === "dark" || newTheme === "light") {
-      setTheme(newTheme);
-      localStorage.setItem("themeForPortfolio", newTheme);
-    }
-  };
-
-  useEffect(() => {
-    if (theme === "dark") {
-      document.body.classList.add("dark");
-    } else {
-      document.body.classList.remove("dark");
-    }
-  }, [theme]);
 
   const openNav = () => {
     setSidePanelOpen(true);

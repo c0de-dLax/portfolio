@@ -6,7 +6,12 @@ import AboutSection from "../components/AboutSection";
 import ProjectsSection from "../components/ProjectsSection";
 import ContactSection from "../components/ContactSection";
 
-const HomePage = () => {
+interface HomePageProps {
+  selectThemeHandler: (newTheme: string) => void;
+  theme: string;
+}
+
+const HomePage: React.FC<HomePageProps> = ({ selectThemeHandler, theme }) => {
 
   useEffect(() => {
     const handleScroll = () => {
@@ -50,7 +55,7 @@ const HomePage = () => {
 
   return (
     <main className="bg-white dark:bg-[rgb(2,8,23)]">
-      <Navbar />
+      <Navbar selectThemeHandler={selectThemeHandler} theme={theme}/>
       <HomeSection />
       <AboutSection />
       <ProjectsSection />

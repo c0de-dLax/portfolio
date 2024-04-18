@@ -3,10 +3,14 @@ import ContactForm from "../components/ContactForm";
 import ContactPageNav from "../components/ContactPageNav";
 import ContactPageFooter from "../components/ContactPageFooter";
 
-const ContactPage = () => {
+interface ContactPageProps {
+  selectThemeHandler: (newTheme: string) => void;
+  theme: string;
+}
+const ContactPage: React.FC<ContactPageProps> = ({ selectThemeHandler, theme }) => {
   return (
     <main className="bg-white dark:bg-[rgb(2,8,23)]">
-      <Navbar />
+      <Navbar selectThemeHandler={selectThemeHandler} theme={theme}/>
       <ContactForm />
       <ContactPageNav />
       <ContactPageFooter />
