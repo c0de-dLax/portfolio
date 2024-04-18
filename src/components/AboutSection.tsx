@@ -24,7 +24,7 @@ const AboutSection = () => {
               <img
                 alt="OJ Catanaoan Image"
                 className="rounded-full shadow-[0_4px_8px_0_rgba(0,0,0,0.2),0_6px_20px_0_rgba(0,0,0,0.19);] dark:shadow-none"
-                src="/portfolio/icons/mypic.webp"
+                src="/icons/mypic.webp"
                 decoding="async"
                 loading="lazy"
                 width="190"
@@ -72,7 +72,7 @@ const AboutSection = () => {
                     <img
                       className="mb-3 w-full"
                       alt="HTML Logo"
-                      src="/portfolio/icons/htmlicon.webp"
+                      src="/icons/htmlicon.webp"
                       decoding="async"
                       loading="lazy"
                       width="283"
@@ -90,7 +90,7 @@ const AboutSection = () => {
                     <img
                       alt="CSS Logo"
                       className="mb-3"
-                      src="/portfolio/icons/cssicon.webp"
+                      src="/icons/cssicon.webp"
                       decoding="async"
                       loading="lazy"
                       width="281"
@@ -108,7 +108,7 @@ const AboutSection = () => {
                     <img
                       alt="Javascript Logo"
                       className="mb-3 w-[90%] ml-auto mr-auto"
-                      src="/portfolio/icons/jsicon.webp"
+                      src="/icons/jsicon.webp"
                       decoding="async"
                       loading="lazy"
                       width="500"
@@ -137,7 +137,7 @@ const AboutSection = () => {
                     <img
                       alt="React js Logo"
                       className="mb-2"
-                      src="/portfolio/icons/reactlogo.webp"
+                      src="/icons/reactlogo.webp"
                       decoding="async"
                       loading="lazy"
                       width="500"
@@ -155,7 +155,7 @@ const AboutSection = () => {
                     <img
                       alt="Tailwind CSS Logo"
                       className="mb-[22px] mt-[20px]"
-                      src="/portfolio/icons/tailwind.webp"
+                      src="/icons/tailwind.webp"
                       decoding="async"
                       loading="lazy"
                       width="287"
@@ -173,7 +173,7 @@ const AboutSection = () => {
                     <img
                       alt="Nodejs Logo"
                       className="mb-[8px] ml-[6px] mt-1"
-                      src="/portfolio/icons/nodejslogo.webp"
+                      src="/icons/nodejslogo.webp"
                       decoding="async"
                       loading="lazy"
                       width="500"

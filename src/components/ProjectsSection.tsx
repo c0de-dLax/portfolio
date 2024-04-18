@@ -59,7 +59,7 @@ const ProjectsSection = () => {
               <img
                 className="w-full object-cover"
                 alt="Basic Calculator Web App Preview Image"
-                src="/portfolio/images/basicCalcuMockUpReady.webp"
+                src="/images/basicCalcuMockUpReady.webp"
                 decoding="async"
                 loading="lazy"
                 width="1620"
@@ -101,7 +101,7 @@ const ProjectsSection = () => {
               <img
                 className="w-full object-cover"
                 alt="Tax Calculator Web App Preview Image"
-                src="/portfolio/images/taxCalcuMockUpReady.webp"
+                src="/images/taxCalcuMockUpReady.webp"
                 decoding="async"
                 loading="lazy"
                 width="1620"
@@ -142,7 +142,7 @@ const ProjectsSection = () => {
               <img
                 className="w-full object-cover"
                 alt="Basic Calculator Web App Preview Image"
-                src="/portfolio/images/comingsoon.webp"
+                src="/images/comingsoon.webp"
                 decoding="async"
                 loading="lazy"
                 width="1620"

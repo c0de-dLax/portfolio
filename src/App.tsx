@@ -6,7 +6,7 @@ import PageUnderConstruction from "./pages/PageUnderConstruction";
 
 const App = () => {
   return (
-    <Router basename="/portfolio/">
+    <Router>
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/contactform" element={<ContactPage />} />
