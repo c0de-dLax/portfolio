@@ -127,7 +127,7 @@ const ProjectsSection = () => {
               </a>
               <a
                 className="inline-block py-2 px-4 mt-3 ml-3 rounded-lg font-[700] tracking-[1px]	text-[rgb(17,24,39)] transition-colors duration-200 ease-in-out notOnMobile:hover:bg-blue-700 notOnMobile:hover:text-white"
-                href="https://github.com/c0de-dLax/taxcalculatorapp.git"
+                href="https://github.com/c0de-dLax/taxcalculatorapp/tree/cf-pages"
                 target="_blank"
                 rel="noopener noreferrer"
               >
