@@ -119,7 +119,7 @@ const ProjectsSection = () => {
               </h2>
               <a
                 className="inline-block py-2 px-4 mt-3 ml-3 rounded-lg font-[700] tracking-[1px] text-white bg-[rgb(17,24,39)] transition-colors duration-200 ease-in-out notOnMobile:hover:bg-blue-700 notOnMobile:hover:text-white"
-                href="https://c0de-dlax.github.io/taxcalculatorapp/"
+                href="https://phtaxcalculator.pages.dev/"
                 target="_blank"
                 rel="noopener noreferrer"
               >
