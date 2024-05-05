@@ -63,7 +63,9 @@ const ContactSection = () => {
                   to="/contactform"
                   aria-label="Access contact form to send message"
                   onClick={() => {
-                    window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                    setTimeout(() => {
+                      window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
+                    }, 20);
                   }}
                   className="border-2 rounded-md px-8 pt-[6px] pb-[8px] text-[calc(10px+1vw)] font-[500] tracking-[3px] transition duration-300 ease-in-out hover:text-blue-500 notOnMobile:hover:bg-white"
                 >
