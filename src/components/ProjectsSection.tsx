@@ -142,7 +142,7 @@ const ProjectsSection = () => {
               <img
                 className="w-full object-cover"
                 alt="Basic Calculator Web App Preview Image"
-                src="/images/comingsoon.webp"
+                src="/images/todoAppPic.webp"
                 decoding="async"
                 loading="lazy"
                 width="1620"
@@ -150,25 +150,24 @@ const ProjectsSection = () => {
               />
             </div>
             <div className="todoAppTextBox">
-              <h1 className="text-2xl font-semibold tracking-[1px]">
+              <h1 className="text-2xl font-[700] tracking-[2px]">
                 To-Do Productivity App
               </h1>
               <h2 className="my-4 text-base tracking-[0.5px]">
                 A tool that will help you keep track and plan your daily routine
                 to seize the day!
               </h2>
-              <Link
-                to="/todoproductivityapp"
-                onClick={() => {
-                  window.scrollTo({ top: 0, left: 0, behavior: "smooth" });
-                }}
+              <a
                 className="inline-block py-2 px-4 mt-3 ml-3 rounded-lg font-[700] tracking-[1px] text-white bg-[rgb(17,24,39)] transition-colors duration-200 ease-in-out notOnMobile:hover:bg-blue-700 notOnMobile:hover:text-white"
+                href="https://my-todoapp-project.pages.dev/"
+                target="_blank"
+                rel="noopener noreferrer"
               >
-                Live Soon!
-              </Link>
+                Live App
+              </a>
               <a
                 className="inline-block py-2 px-4 mt-3 ml-3 rounded-lg font-[700] tracking-[1px]	text-[rgb(17,24,39)] transition-colors duration-200 ease-in-out notOnMobile:hover:bg-blue-700 notOnMobile:hover:text-white"
-                href="https://github.com/c0de-dLax"
+                href="https://github.com/c0de-dLax/todoapp/tree/cf-pages"
                 target="_blank"
                 rel="noopener noreferrer"
               >
