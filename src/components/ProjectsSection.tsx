@@ -1,5 +1,4 @@
 import { useState } from "react";
-import { Link } from "react-router-dom";
 
 import { keyframes } from "@emotion/react";
 import { CodeBracketIcon } from "@heroicons/react/24/solid";
