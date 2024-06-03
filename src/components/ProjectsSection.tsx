@@ -141,7 +141,7 @@ const ProjectsSection = () => {
               <img
                 className="w-full object-cover"
                 alt="Basic Calculator Web App Preview Image"
-                src="/images/todoAppPic.webp"
+                src="/images/todoAppMockUpReady.webp"
                 decoding="async"
                 loading="lazy"
                 width="1620"
