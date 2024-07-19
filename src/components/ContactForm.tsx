@@ -85,7 +85,7 @@ const ContactForm = () => {
 
     const formData = new FormData(formElement);
     fetch(
-      "https://script.google.com/macros/s/AKfycbwEB7rEinie_N4PNOwM-pEVKRT115gxD6Ke4sbkxvqATSPV5_-a1oiPeHD5_ivtIxU3rw/exec",
+      "https://script.google.com/macros/s/AKfycbyUscROityZsolz849BnvPFQQpjWWMwiz0KXVJhfam75kxqlDUSt7g1kE3Z6KHpEj_31A/exec",
       {
         method: "POST",
         body: formData,
