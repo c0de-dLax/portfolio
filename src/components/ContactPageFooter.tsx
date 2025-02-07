@@ -3,6 +3,11 @@ import { Link } from "react-router-dom";
 import { FaAnglesUp } from "react-icons/fa6";
 
 const ContactPageFooter = () => {
+
+  const currentYear = new Date().toLocaleDateString("en-US", {
+    year: "numeric",
+  });
+
   return (
     <section>
       <div className="relative w-full h-full bg-gray-300 dark:bg-[rgb(17,24,39)]">
@@ -49,7 +54,7 @@ const ContactPageFooter = () => {
           id="copyright"
           className="flex xs:flex-col justify-center items-center w-full text-black font-[500] dark:text-white dark:font-[400] pt-[20px] pb-4 mx-auto text-[14px] tracking-[0.5px]"
         >
-          <span>© 2024 designed and created by&nbsp;</span>
+          <span>© 2024-{currentYear} designed and created by&nbsp;</span>
           <span>Ody James Catanaoan</span>
         </div>
       </div>
